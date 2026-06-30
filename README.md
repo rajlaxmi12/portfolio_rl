@@ -165,9 +165,3 @@ rajlaxmi.120306@gmail.com
 If you like this project, consider giving it a **Star ⭐** on GitHub. It motivates me to keep building and sharing more projects.
 
 ---
-
-# 📄 License
-
-This project is licensed under the MIT License.
-
-Feel free to fork, customize, and use it for learning purposes.
