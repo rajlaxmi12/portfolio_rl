@@ -113,11 +113,10 @@ http://localhost:5173
 
 # 📸 Screenshots
 
-```md
-![Home](assets/Home.png)
-
-![Projects](assets/Projects.png)
-```
+<p align="center">
+  <img src="assets/Home.png" alt="Home" width="48%">
+  <img src="assets/Projects.png" alt="Projects" width="48%">
+</p>
 
 ---
 
