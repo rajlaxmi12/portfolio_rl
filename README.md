@@ -113,23 +113,10 @@ http://localhost:5173
 
 # 📸 Screenshots
 
-Add screenshots of your portfolio here.
-
-Example:
-
-```
-assets/
-├── home.png
-├── projects.png
-├── contact.png
-```
-
-Then include:
-
 ```md
-![Home](assets/home.png)
+![Home](assets/Home.png)
 
-![Projects](assets/projects.png)
+![Projects](assets/Projects.png)
 ```
 
 ---
