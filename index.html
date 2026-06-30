@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Raj Laxmi — Engineer & Builder</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body data-domain="web">
+
+<div id="c1"></div>
+<div id="c2"></div>
+<div id="spb"></div>
+
+<!-- ═══ NAV ═══ -->
+<nav>
+  <a class="n-logo" href="#home">
+    <div class="n-logo-box">RL</div>Raj Laxmi
+  </a>
+  <ul class="n-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#achievements">Achievements</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="n-controls">
+    <div class="domain-pill">
+      <button class="d-btn on" id="b-web" onclick="setDomain('web')">Full-Stack</button>
+      <button class="d-btn" id="b-ml" onclick="setDomain('ml')">ML / AI</button>
+    </div>
+    <button class="theme-t" id="th-btn" onclick="toggleTheme()">🌙</button>
+  </div>
+</nav>
+
+<!-- ═══ HERO ═══ -->
+<section id="home">
+<div class="hero">
+  <!-- decorative blob -->
+  <svg class="hero-blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" fill="var(--blue)">
+    <path d="M42.7,-62.9C54.9,-56.7,63.5,-43.4,68.8,-29.1C74.1,-14.8,76.2,0.6,72.2,14.7C68.2,28.8,58.2,41.6,46,51.5C33.9,61.4,19.5,68.4,3.4,70.3C-12.7,72.2,-30.5,69,-44.3,60.1C-58.1,51.2,-67.9,36.7,-71.3,21.1C-74.7,5.5,-71.7,-11.2,-64.4,-25.2C-57.1,-39.2,-45.5,-50.5,-32.5,-57C-19.5,-63.5,-5.1,-65.2,8.4,-63.3C21.9,-61.4,30.5,-69.1,42.7,-62.9Z" transform="translate(100 100)"/>
+  </svg>
+
+  <div class="hero-l">
+    <div class="hero-eyebrow rv vis">
+      <span class="eyebrow-ping"></span>
+      <span id="eyebrow-t">BIT Mesra · CSE · Open to Internships</span>
+    </div>
+    <h1 class="hero-name">
+      Raj<br><em id="hero-em">Laxmi</em>
+    </h1>
+    <div class="hero-sub">
+      <div class="typer-line">
+        <span id="typer-prefix"></span><span id="typer"></span><span class="blink-bar"></span>
+      </div>
+    </div>
+    <p class="hero-bio rv vis" id="h-bio">
+      CS undergrad at BIT Mesra building production-ready MERN applications. 500+ LeetCode problems, dual 100-day badge holder, and national hackathon finalist shipping full-stack systems from job portals to e-commerce platforms.
+    </p>
+    <div class="hero-actions rv vis">
+      <a class="btn btn-solid" href="#projects">View Projects</a>
+      <a class="btn btn-line" href="#contact">Get in Touch</a>
+      <a class="btn btn-line" href="https://github.com/rajlaxmi12" target="_blank">GitHub ↗</a>
+    </div>
+    <div class="stats-row rv vis">
+      <div class="stat"><div class="stat-n"><span id="s1">0</span><sup>+</sup></div><div class="stat-l">LeetCode solved</div></div>
+      <div class="stat"><div class="stat-n"><span id="s2">0</span><sup>×</sup></div><div class="stat-l">100-day badges</div></div>
+      <div class="stat"><div class="stat-n"><span id="s3">0</span><sup>+</sup></div><div class="stat-l">Hackathons cleared</div></div>
+    </div>
+  </div>
+
+  <!-- EDITOR PANEL -->
+  <div style="position:relative">
+    <div class="f-badges" id="fbadges"></div>
+    <div class="editor-shell" id="eshell">
+      <div class="editor-bar">
+        <span class="e-dot r"></span><span class="e-dot y"></span><span class="e-dot g"></span>
+        <span class="e-fname" id="e-fname">raj_laxmi.json</span>
+      </div>
+      <div class="e-body" id="e-body"></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<div class="sdiv"></div>
+
+<!-- ═══ SKILLS ═══ -->
+<section id="skills">
+<div class="sec">
+  <div class="sec-eyebrow rv">Technical Expertise</div>
+  <h2 class="sec-title rv">My <span>Stack</span></h2>
+  <div class="skills-wrap">
+    <div class="sk-bars" id="sk-bars"></div>
+    <div class="sk-chips-panel rv" id="sk-chips"></div>
+  </div>
+</div>
+</section>
+
+<div class="sdiv"></div>
+
+<!-- ═══ EXPERIENCE ═══ -->
+<div class="sec-alt">
+<section id="experience">
+<div class="sec">
+  <div class="sec-eyebrow rv">Work History</div>
+  <h2 class="sec-title rv">Where I've <span>Built</span></h2>
+  <div class="exp-list" id="exp-list"></div>
+</div>
+</section>
+</div>
+
+<div class="sdiv"></div>
+
+<!-- ═══ PROJECTS ═══ -->
+<section id="projects">
+<div class="sec">
+  <div class="sec-eyebrow rv">Work Samples</div>
+  <h2 class="sec-title rv" id="proj-title">Things I've <span>Shipped</span></h2>
+  <div class="proj-grid" id="proj-grid"></div>
+</div>
+</section>
+
+<div class="sdiv"></div>
+
+<!-- ═══ ACHIEVEMENTS ═══ -->
+<div class="sec-alt">
+<section id="achievements">
+<div class="sec">
+  <div class="sec-eyebrow rv">Recognition</div>
+  <h2 class="sec-title rv">Wins & <span>Milestones</span></h2>
+  <div class="ach-grid" id="ach-grid"></div>
+</div>
+</section>
+</div>
+
+<div class="sdiv"></div>
+
+<!-- ═══ EDUCATION ═══ -->
+<section id="about">
+<div class="sec">
+  <div class="sec-eyebrow rv">Background</div>
+  <h2 class="sec-title rv">Education</h2>
+  <div class="edu-grid rv">
+    <div class="edu-c"><div class="edu-ico">🎓</div><div><div class="edu-d">B.Tech — Computer Science & Engineering</div><div class="edu-s">Birla Institute of Technology (BIT), Mesra</div><div class="edu-m">2023 – 2027 (Expected) · Ranchi, India</div></div></div>
+    <div class="edu-c"><div class="edu-ico">📚</div><div><div class="edu-d">Senior Secondary — Science</div><div class="edu-s">DAV Nandraj Public School, Bariatu</div><div class="edu-m">Passed 2023</div></div></div>
+  </div>
+</div>
+</section>
+
+<div class="sdiv"></div>
+
+<!-- ═══ CONTACT ═══ -->
+<div class="sec-alt">
+<section id="contact">
+<div class="sec">
+  <div class="sec-eyebrow rv">Get in Touch</div>
+  <h2 class="sec-title rv">Let's <span>Connect</span></h2>
+  <div class="contact-wrap rv">
+    <div class="contact-cards">
+      <a class="cc" href="mailto:rajlaxmi.120306@gmail.com"><div class="cc-ico">✉</div><div><div class="cc-lbl">Email</div><div class="cc-val">rajlaxmi.120306@gmail.com</div></div></a>
+      <a class="cc" href="https://www.linkedin.com/in/raj-laxmi-4007a7332/" target="_blank"><div class="cc-ico">🔗</div><div><div class="cc-lbl">LinkedIn</div><div class="cc-val">linkedin.com/in/rajlaxmi</div></div></a>
+      <a class="cc" href="https://github.com/rajlaxmi12" target="_blank"><div class="cc-ico">⌥</div><div><div class="cc-lbl">GitHub</div><div class="cc-val">github.com/rajlaxmi12</div></div></a>
+      <a class="cc" href="tel:+919508898392"><div class="cc-ico">📞</div><div><div class="cc-lbl">Phone</div><div class="cc-val">+91 950 889 8392</div></div></a>
+    </div>
+    <div class="cform">
+      <div class="cf-title">Send a Message</div>
+      <div class="cf-row">
+        <div class="cf-2">
+          <div class="cf-group"><label class="cf-label">Name</label><input class="cf-input" placeholder="Your name" type="text"/></div>
+          <div class="cf-group"><label class="cf-label">Email</label><input class="cf-input" placeholder="your@email.com" type="email"/></div>
+        </div>
+        <div class="cf-group"><label class="cf-label">Subject</label><input class="cf-input" placeholder="What's this about?" type="text"/></div>
+        <div class="cf-group"><label class="cf-label">Message</label><textarea class="cf-ta" placeholder="Tell me more..."></textarea></div>
+        <button class="cf-btn">Send Message →</button>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+</div>
+
+<footer>
+  <span class="ft-copy">© 2025 Raj Laxmi · BIT Mesra, Ranchi</span>
+  <div class="ft-links">
+    <a class="ft-link" href="https://github.com/rajlaxmi12" target="_blank">⌥</a>
+    <a class="ft-link" href="https://www.linkedin.com/in/raj-laxmi-4007a7332/" target="_blank">🔗</a>
+    <a class="ft-link" href="mailto:rajlaxmi.120306@gmail.com">✉</a>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
